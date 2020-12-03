@@ -7,8 +7,8 @@ import Text.Regex.PCRE
 solution =
   Solution
     { parse = mapMaybe parseLine . lines,
-      part1 = length . filter isValid,
-      part2 = length . filter isValid2
+      part1 = countAll isValid,
+      part2 = countAll isValid2
     }
 
 data Row = Row {pos1 :: Int, pos2 :: Int, char :: Char, pwd :: String} deriving (Show)

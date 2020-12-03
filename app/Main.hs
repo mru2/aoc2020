@@ -1,10 +1,10 @@
 module Main where
 
 import Common ( aoc )
-import Day02 ( solution )
+import Day03 ( solution )
 
 main :: IO ()
 main =
   aoc
-    2
-    Day02.solution
+    3
+    Day03.solution

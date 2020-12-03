@@ -36,3 +36,6 @@ aoc n solution = do
 
 tbd :: a -> String
 tbd _ = "(not implemented)"
+
+countAll :: (a -> Bool) -> [a] -> Int
+countAll x = length . filter x
