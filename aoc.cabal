@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 569f8b6ba8da98e000560506df2e62abed1e9d33fa9b1dc847e14c77e5c8de79
+-- hash: c72cfbfd63794f33c431e3902ba396a332af9056b12914743819d9968abe584a
 
 name:           aoc
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Common
       Day01
+      Day02
   other-modules:
       Paths_aoc
   hs-source-dirs:
@@ -37,6 +38,7 @@ library
       base >=4.7 && <5
     , clock
     , formatting
+    , regex-pcre
   default-language: Haskell2010
 
 executable aoc-exe
@@ -51,6 +53,7 @@ executable aoc-exe
     , base >=4.7 && <5
     , clock
     , formatting
+    , regex-pcre
   default-language: Haskell2010
 
 test-suite aoc-test
@@ -66,4 +69,5 @@ test-suite aoc-test
     , base >=4.7 && <5
     , clock
     , formatting
+    , regex-pcre
   default-language: Haskell2010
