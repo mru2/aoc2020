@@ -39,3 +39,10 @@ tbd _ = "(not implemented)"
 
 countAll :: (a -> Bool) -> [a] -> Int
 countAll x = length . filter x
+
+filterNth :: Int -> [a] -> [a]
+filterNth step (xs : rest) = xs : filterNth step filtered_rest where filtered_rest = drop (step - 1) rest
+filterNth _ [] = []
+
+applyAll :: (a -> b -> c) -> [a] -> b -> [c]
+applyAll fun list param = map (`fun` param) list
